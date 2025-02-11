@@ -1,5 +1,4 @@
 # Punkte
-# Dungeon Adventure Game
 
 Ein textbasiertes Abenteuer-Spiel, bei dem der Spieler tief in ein Dungeon vordringt, um Gegner zu besiegen und Herausforderungen zu meistern. Das Spiel bietet ein einfaches Level-Up-System, Kämpfe gegen Gegner und Bosse sowie die Möglichkeit, das Spiel jederzeit zu beenden oder neu zu starten.
 
