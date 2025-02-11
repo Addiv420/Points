@@ -222,5 +222,3 @@ while True:
         dungeon_tiefe_ziel = random.randint(5, 10)
         dungeon_erfahrungspunkte = random.randint(10, 20)
         boss_erfahrungspunkte = random.randint(20, 40)
-
-        
