@@ -14,13 +14,13 @@ Ein textbasiertes Abenteuer-Spiel, bei dem der Spieler tief in ein Dungeon vordr
 1. **Klonen des Repositories**:
     ```bash
     git clone https://github.com/dein-benutzername/dungeon-adventure-game.git
-    cd dungeon-adventure-game
+    cd Punkte
     ```
 
 2. **Spiel starten**:
     Nach dem Klonen des Repositories, einfach das Skript ausführen:
     ```bash
-    python dungeon_game.py
+    python Punkte.py
     ```
 
 ### Hinweis für Windows-Nutzer:
