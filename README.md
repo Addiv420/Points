@@ -1,83 +1,80 @@
-# Punkte
+# Points
 
-Ein textbasiertes Abenteuer-Spiel, bei dem der Spieler tief in ein Dungeon vordringt, um Gegner zu besiegen und Herausforderungen zu meistern. Das Spiel bietet ein einfaches Level-Up-System, Kämpfe gegen Gegner und Bosse sowie die Möglichkeit, das Spiel jederzeit zu beenden oder neu zu starten.
+A text-based adventure game where the player delves deep into a dungeon to defeat enemies and overcome challenges. The game features a simple level-up system, enemy and boss battles, and allows you to quit or restart at any time.
 
 ## Installation
 
-### Voraussetzungen
+### Requirements
 
 - Python 3.x
-- msvcrt (für Windows-Nutzer)
+- `msvcrt` (for Windows users)
 
-### Installation und Ausführung
+### Installation and Running
 
-1. **Klonen des Repositories**:
+1. **Clone the repository**:
     ```bash
-    git clone https://github.com/dein-benutzername/dungeon-adventure-game.git
-    cd Punkte
+    git clone https://github.com/Addiv420/Points.git
+    cd Points
     ```
 
-2. **Spiel starten**:
-    Nach dem Klonen des Repositories, einfach das Skript ausführen:
+2. **Start the game**:  
+    After cloning the repository, simply run the script:
     ```bash
-    python Punkte.py
+    python Points.py
     ```
 
-### Hinweis für Windows-Nutzer:
-Das Spiel nutzt die `msvcrt`-Bibliothek für Tastatureingaben. Dies bedeutet, dass es auf Windows-Plattformen ausgeführt werden muss. Auf Linux und macOS könnte eine alternative Lösung erforderlich sein.
+### Note for Windows Users:
+The game uses the `msvcrt` library for keyboard input, which is Windows-specific. On Linux or macOS, an alternative implementation is required for compatibility.
 
-## Spielprinzip
+## Gameplay
 
-Das Spiel ist ein textbasiertes Dungeon-Crawler-Abenteuer, bei dem der Spieler auf verschiedene Gegner trifft, die bekämpft werden müssen, um im Dungeon tiefer vorzudringen und Erfahrungen zu sammeln.
+The game is a text-based dungeon crawler in which the player encounters enemies that must be defeated to progress deeper into the dungeon and gain experience.
 
-**Ziel:**  
-- Gehe so tief wie möglich in das Dungeon.
-- Besiege Gegner und Bosse, um Erfahrungspunkte zu erhalten.
-- Steige im Level auf und verbessere deine Fähigkeiten.
-- Vermeide Fehlschläge und steige bei Bedarf neu ein.
+**Goal:**  
+- Go as deep as possible into the dungeon.  
+- Defeat enemies and bosses to gain experience.  
+- Level up and improve your abilities.  
+- Avoid failure, or restart if needed.
 
-## Steuerung
+## Controls
 
-- **[W]**: Gehe vorwärts in das Dungeon.
-- **[S]**: Gehe zurück.
-- **[Quit]**: Beendet das Spiel.
-- **[J]**: Startet das Spiel neu, wenn du verloren hast.
-- **[N]**: Beendet das Spiel, wenn du verloren hast.
-- **Angriff**: Wähle eine Angriffstaste aus den verfügbaren (z.B. [Y], [X], [C], etc.).
-- **Ausweichen**: Wähle eine der vier möglichen Ausweich-Tasten aus ([Q], [E], [A], [D]).
+- **[W]**: Move forward into the dungeon.  
+- **[S]**: Move back.  
+- **[Quit]**: Exit the game.  
+- **[J]**: Restart the game after dying.  
+- **[N]**: Quit the game after dying.  
+- **Attack**: Press the correct attack key from the options (e.g., [Y], [X], [C], etc.).  
+- **Dodge**: Use one of the four possible dodge keys ([Q], [E], [A], [D]).
 
-## Spielablauf
+## Game Flow
 
-1. **Dungeon-Tiefe und Gegner**:  
-   Du beginnst auf Ebene 0 des Dungeons. Jede Ebene ist mit einem zufälligen Gegner oder einem Boss versehen.
+1. **Dungeon Depth and Enemies**:  
+   You start at floor 0 of the dungeon. Each level features a random enemy or a boss encounter.
 
-2. **Kämpfe gegen Gegner**:  
-   Wenn du einen Gegner triffst, musst du die richtige Angriffstaste drücken, um den Gegner zu besiegen. Bei Fehlschlag verlierst du das Spiel und musst entscheiden, ob du einen neuen Versuch starten möchtest.
+2. **Fighting Enemies**:  
+   When an enemy appears, press the correct attack key to defeat them. If you fail, you die and must choose whether to try again.
 
-3. **Bosskämpfe**:  
-   Wenn du das Ende des Dungeons erreichst, trittst du gegen einen Boss an. Du musst Angriffstasten korrekt drücken und gleichzeitig den Angriffen des Bosses ausweichen, um zu überleben.
+3. **Boss Fights**:  
+   At the end of a dungeon depth, you face a boss. You must press the right attack keys and dodge correctly to survive.
 
 4. **Level-Up**:  
-   Wenn du genug Erfahrungspunkte sammelst, steigerst du dein Level und erhältst mehr Kraft, um tiefere Ebenen zu erreichen.
+   Collect enough experience points to level up and gain more strength to reach deeper floors.
 
-5. **Verlieren und Neustart**:  
-   Wenn du stirbst, kannst du das Spiel neu starten oder aufhören. Es gibt auch einen Cheat-Code, den du mit der Eingabe „nuh uh“ aktivieren kannst.
+5. **Death and Restart**:  
+   If you die, you can restart or quit the game. There is also a cheat code, but that’s a secret. :3
 
-## Farben
+## Colors
 
-Das Spiel nutzt Farben, um den Text hervorzuheben:
+The game uses colored text for feedback:
 
-- **Grün**: Zeigt positive Ereignisse wie Level-Up oder Angriffserfolge an.
-- **Rot**: Zeigt Fehlschläge oder Gegner an.
-- **Gelb**: Wird für Hinweise und Statusanzeigen verwendet.
+- **Green**: Indicates positive events such as level-ups or successful attacks.  
+- **Red**: Indicates failures or enemy actions.  
+- **Yellow**: Used for tips and status messages.
 
-## Funktionen
+## Features
 
-- **Punkte**: Dein Fortschritt im Dungeon wird in Punkten gemessen.
-- **Level**: Dein Charakter steigt im Level auf und wird stärker.
-- **Erfahrung**: Du sammelst Erfahrungspunkte, indem du Gegner besiegst und Herausforderungen meisterst.
-- **Bosskämpfe**: Am Ende jeder Dungeon-Tiefe kämpfst du gegen einen Boss, um weitere Punkte und Erfahrung zu sammeln.
-- **Tasteneingaben**: Um das Spiel zu steuern, drücke Tasten für Bewegung, Angriff und Ausweichen.
-
-## Beispiel für das Spiel:
-
+- **Points**: Your dungeon progress is measured in points.  
+- **Level**: Your character levels up and grows stronger.  
+- **Experience**: Earn EXP by defeating enemies and clearing challenges.  
+- **Boss Battles**: Face a boss at the end of each dungeon tier to earn more points and EXP.  
+- **Keyboard Input**: Use keys to move, attack, and dodge throughout the game.
