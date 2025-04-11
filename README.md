@@ -7,7 +7,6 @@ A text-based adventure game where the player delves deep into a dungeon to defea
 ### Requirements
 
 - Python 3.x
-- `msvcrt` (for Windows users)
 
 ### Installation and Running
 
@@ -20,11 +19,8 @@ A text-based adventure game where the player delves deep into a dungeon to defea
 2. **Start the game**:  
     After cloning the repository, simply run the script:
     ```bash
-    python Points.py
+    python points.py
     ```
-
-### Note for Windows Users:
-The game uses the `msvcrt` library for keyboard input, which is Windows-specific. On Linux or macOS, an alternative implementation is required for compatibility.
 
 ## Gameplay
 
@@ -34,14 +30,14 @@ The game is a text-based dungeon crawler in which the player encounters enemies 
 - Go as deep as possible into the dungeon.  
 - Defeat enemies and bosses to gain experience.  
 - Level up and improve your abilities.  
-- Avoid failure, or restart if needed.
+- Avoid die. (Pretty self-explanatory)
 
 ## Controls
 
 - **[W]**: Move forward into the dungeon.  
 - **[S]**: Move back.  
 - **[Quit]**: Exit the game.  
-- **[J]**: Restart the game after dying.  
+- **[Y]**: Restart the game after dying.  
 - **[N]**: Quit the game after dying.  
 - **Attack**: Press the correct attack key from the options (e.g., [Y], [X], [C], etc.).  
 - **Dodge**: Use one of the four possible dodge keys ([Q], [E], [A], [D]).
@@ -49,16 +45,16 @@ The game is a text-based dungeon crawler in which the player encounters enemies 
 ## Game Flow
 
 1. **Dungeon Depth and Enemies**:  
-   You start at floor 0 of the dungeon. Each level features a random enemy or a boss encounter.
+   You start at floor 0 of the dungeon. Each level could feature one or more random enemies and/or one random boss encounter.
 
 2. **Fighting Enemies**:  
    When an enemy appears, press the correct attack key to defeat them. If you fail, you die and must choose whether to try again.
 
 3. **Boss Fights**:  
-   At the end of a dungeon depth, you face a boss. You must press the right attack keys and dodge correctly to survive.
+   At the end of a dungeon depth, you could face a boss. You must press the right attack keys and dodge correctly to survive.
 
 4. **Level-Up**:  
-   Collect enough experience points to level up and gain more strength to reach deeper floors.
+   Collect experience points to level up and gain more strength and reach deeper floors.
 
 5. **Death and Restart**:  
    If you die, you can restart or quit the game. There is also a cheat code, but that’s a secret. :3
